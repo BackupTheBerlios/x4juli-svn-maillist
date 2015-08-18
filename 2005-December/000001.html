@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X4juli-svn] [Bug #5949] Distribution package should be contained within directory
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x4juli-svn/2005-December/index.html" >
+   <LINK REL="made" HREF="mailto:x4juli-svn%40lists.berlios.de?Subject=Re%3A%20%5BX4juli-svn%5D%20%5BBug%20%235949%5D%20Distribution%20package%20should%20be%20contained%20within%20directory&In-Reply-To=%3C200512281824.jBSIOvql014678%40unicorn.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000000.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X4juli-svn] [Bug #5949] Distribution package should be contained within directory</H1>
+    <B>noreply at berlios.de</B> 
+    <A HREF="mailto:x4juli-svn%40lists.berlios.de?Subject=Re%3A%20%5BX4juli-svn%5D%20%5BBug%20%235949%5D%20Distribution%20package%20should%20be%20contained%20within%20directory&In-Reply-To=%3C200512281824.jBSIOvql014678%40unicorn.berlios.de%3E"
+       TITLE="[X4juli-svn] [Bug #5949] Distribution package should be contained within directory">noreply at berlios.de
+       </A><BR>
+    <I>Wed Dec 28 19:24:57 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000000.html">[X4juli-svn] [Bug #5949] Distribution package should be contained within directory
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Bug #5949, was updated on 2005-Dec-21 17:37
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: gnuphie
+Assigned to : boris_unckel
+Summary: Distribution package should be contained within directory
+
+Details: For consistency with the vast majority of other packages I recommend placing the contents of the distribution .gz file within a single directory.
+
+Most packaged distributed as a tar (.tar, .gz, .bz2) have a single directory root named the same (or similar) as the package name.
+
+I know there is no technical necessity for this, but with this being the norm it prevents the extremely annoying unarchiving of the package into the current directory, scattering files into the existing directory hierarchy where they have no business being. Picking the scattered files out after the fact can be extremely time-consuming (and sometimes existing file are overwritten).
+
+Obviously, one can inspect the existing contents before the extraction and realize what is about to happen, then create the proper directory first. But why make it hard for everyone?
+
+Follow-Ups:
+
+Date: 2005-Dec-28 19:24
+By: boris_unckel
+
+Comment:
+Will be resolved with next release. Update to build.xml is already in SNV.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+<A HREF="http://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=5949&amp;group_id=5430">http://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=5949&amp;group_id=5430</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000000.html">[X4juli-svn] [Bug #5949] Distribution package should be contained within directory
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x4juli-svn">More information about the X4juli-svn
+mailing list</a><br>
+</body></html>

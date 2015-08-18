@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [X4juli-svn] [Bug #12526] PatternFormatter doesn't work with the	default LogManager
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x4juli-svn/2007-November/index.html" >
+   <LINK REL="made" HREF="mailto:x4juli-svn%40lists.berlios.de?Subject=Re%3A%20%5BX4juli-svn%5D%20%5BBug%20%2312526%5D%20PatternFormatter%20doesn%27t%20work%20with%20the%0A%09default%20LogManager&In-Reply-To=%3C200711221246.lAMCkLOa001317%40unicorn.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000004.html">
+   <LINK REL="Next"  HREF="000006.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[X4juli-svn] [Bug #12526] PatternFormatter doesn't work with the	default LogManager</H1>
+    <B>admin at berlios.de</B> 
+    <A HREF="mailto:x4juli-svn%40lists.berlios.de?Subject=Re%3A%20%5BX4juli-svn%5D%20%5BBug%20%2312526%5D%20PatternFormatter%20doesn%27t%20work%20with%20the%0A%09default%20LogManager&In-Reply-To=%3C200711221246.lAMCkLOa001317%40unicorn.berlios.de%3E"
+       TITLE="[X4juli-svn] [Bug #12526] PatternFormatter doesn't work with the	default LogManager">admin at berlios.de
+       </A><BR>
+    <I>Thu Nov 22 13:46:21 CET 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000004.html">[X4juli-svn] [Patch #2253] Decouple PatternFormatter from	x4juli-specific LogManagers
+</A></li>
+        <LI>Next message: <A HREF="000006.html">[X4juli-svn] [Bug #12527] Doesn't work with Tomcat 6.x
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#5">[ date ]</a>
+              <a href="thread.html#5">[ thread ]</a>
+              <a href="subject.html#5">[ subject ]</a>
+              <a href="author.html#5">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Bug #12526, was updated on 2007-Nov-22 13:46
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: grnch
+Assigned to : none
+Summary: PatternFormatter doesn't work with the default LogManager
+
+Details: PatternFormatter is a very useful component, it's a shame it can't be used without letting x4juli completely take over the java.util.logging implementation. In some environments this is not possible because access to JVM startup parameters (to override java.util.logging.LogManager) is not allowed or atleast inconvenient.
+
+In the Patches section there is a simple patch that fixes this under the name &quot;Decouple PatternFormatter from x4juli-specific LogManagers&quot;.
+
+
+For detailed info, follow this link:
+<A HREF="http://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=12526&amp;group_id=5430">http://developer.berlios.de/bugs/?func=detailbug&amp;bug_id=12526&amp;group_id=5430</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000004.html">[X4juli-svn] [Patch #2253] Decouple PatternFormatter from	x4juli-specific LogManagers
+</A></li>
+	<LI>Next message: <A HREF="000006.html">[X4juli-svn] [Bug #12527] Doesn't work with Tomcat 6.x
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#5">[ date ]</a>
+              <a href="thread.html#5">[ thread ]</a>
+              <a href="subject.html#5">[ subject ]</a>
+              <a href="author.html#5">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x4juli-svn">More information about the X4juli-svn
+mailing list</a><br>
+</body></html>

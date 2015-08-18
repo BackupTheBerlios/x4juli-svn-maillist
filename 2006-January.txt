@@ -1,0 +1,81 @@
+From noreply at berlios.de  Fri Jan 27 12:43:10 2006
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Fri, 27 Jan 2006 02:43:10 -0900 (AKST)
+Subject: [X4juli-svn] [Bug #6212] JULI logs to catalina.date.log if no <realm> in <host>
+Message-ID: <200601271143.k0RBhA8T023713@unicorn.berlios.de>
+
+Bug #6212, was updated on 2006-Jan-27 02:43
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: craig_raymond
+Assigned to : none
+Summary: JULI logs to catalina.date.log if no <realm> in <host>
+
+Details: With Tomcat 5.5.15:
+
+With a vanilla logging.properties in ../WEB-INF/classes and no <realm> specified
+in server.xml, and the <realm> specified in ROOT.xml - the logging file is
+created as zero length, and any messages are logged in catalina.data.log.  Move
+the <realm> tag to server.xml and logging occurs as expected.
+
+There is a message thread on users at tomcat.apache.org with the following subject
+concerning this issue:
+
+"tomcat 5.5.15 - does JULI required a host tag defined realm?"
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=6212&group_id=5430
+
+
+From noreply at berlios.de  Mon Jan 30 15:26:27 2006
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Mon, 30 Jan 2006 05:26:27 -0900 (AKST)
+Subject: [X4juli-svn] [Bug #6212] JULI logs to catalina.date.log if no <realm> in <host>
+Message-ID: <200601301426.k0UEQRZq016941@unicorn.berlios.de>
+
+Bug #6212, was updated on 2006-Jan-27 02:43
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: craig_raymond
+Assigned to : none
+Summary: JULI logs to catalina.date.log if no <realm> in <host>
+
+Details: With Tomcat 5.5.15:
+
+With a vanilla logging.properties in ../WEB-INF/classes and no <realm> specified
+in server.xml, and the <realm> specified in ROOT.xml - the logging file is
+created as zero length, and any messages are logged in catalina.data.log.  Move
+the <realm> tag to server.xml and logging occurs as expected.
+
+There is a message thread on users at tomcat.apache.org with the following subject
+concerning this issue:
+
+"tomcat 5.5.15 - does JULI required a host tag defined realm?"
+
+Follow-Ups:
+
+Date: 2006-Jan-30 05:26
+By: craig_raymond
+
+Comment:
+I have downloaded and built to the latest nightly build of Tomact, and the logging is working correctly.
+
+Thanks, Craig.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=6212&group_id=5430
+
+

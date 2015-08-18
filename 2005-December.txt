@@ -1,0 +1,71 @@
+From noreply at berlios.de  Wed Dec 21 17:37:26 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Wed, 21 Dec 2005 09:37:26 -0700 (MST)
+Subject: [X4juli-svn] [Bug #5949] Distribution package should be contained within directory
+Message-ID: <200512211637.jBLGbQRD012216@unicorn.berlios.de>
+
+Bug #5949, was updated on 2005-Dec-21 09:37
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: gnuphie
+Assigned to : none
+Summary: Distribution package should be contained within directory
+
+Details: For consistency with the vast majority of other packages I recommend placing the contents of the distribution .gz file within a single directory.
+
+Most packaged distributed as a tar (.tar, .gz, .bz2) have a single directory root named the same (or similar) as the package name.
+
+I know there is no technical necessity for this, but with this being the norm it prevents the extremely annoying unarchiving of the package into the current directory, scattering files into the existing directory hierarchy where they have no business being. Picking the scattered files out after the fact can be extremely time-consuming (and sometimes existing file are overwritten).
+
+Obviously, one can inspect the existing contents before the extraction and realize what is about to happen, then create the proper directory first. But why make it hard for everyone?
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=5949&group_id=5430
+
+
+From noreply at berlios.de  Wed Dec 28 19:24:57 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Wed, 28 Dec 2005 19:24:57 +0100 (CET)
+Subject: [X4juli-svn] [Bug #5949] Distribution package should be contained within directory
+Message-ID: <200512281824.jBSIOvql014678@unicorn.berlios.de>
+
+Bug #5949, was updated on 2005-Dec-21 17:37
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: gnuphie
+Assigned to : boris_unckel
+Summary: Distribution package should be contained within directory
+
+Details: For consistency with the vast majority of other packages I recommend placing the contents of the distribution .gz file within a single directory.
+
+Most packaged distributed as a tar (.tar, .gz, .bz2) have a single directory root named the same (or similar) as the package name.
+
+I know there is no technical necessity for this, but with this being the norm it prevents the extremely annoying unarchiving of the package into the current directory, scattering files into the existing directory hierarchy where they have no business being. Picking the scattered files out after the fact can be extremely time-consuming (and sometimes existing file are overwritten).
+
+Obviously, one can inspect the existing contents before the extraction and realize what is about to happen, then create the proper directory first. But why make it hard for everyone?
+
+Follow-Ups:
+
+Date: 2005-Dec-28 19:24
+By: boris_unckel
+
+Comment:
+Will be resolved with next release. Update to build.xml is already in SNV.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=5949&group_id=5430
+
+

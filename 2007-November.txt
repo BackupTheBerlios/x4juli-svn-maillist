@@ -1,0 +1,79 @@
+From admin at berlios.de  Thu Nov 22 12:09:35 2007
+From: admin at berlios.de (admin at berlios.de)
+Date: Thu, 22 Nov 2007 12:09:35 +0100 (CET)
+Subject: [X4juli-svn] [Patch #2253] Decouple PatternFormatter from
+	x4juli-specific LogManagers
+Message-ID: <200711221109.lAMB9ZVT020293@unicorn.berlios.de>
+
+Patch #2253 has been updated. 
+
+Project: x4juli
+Category: None
+Status: Open
+Submitted by: grnch
+Assigned to : none
+Summary: Decouple PatternFormatter from x4juli-specific LogManagers
+
+-------------------------------------------------------
+For more info, visit:
+
+http://developer.berlios.de/patch/?func=detailpatch&patch_id=2253&group_id=5430
+
+
+From admin at berlios.de  Thu Nov 22 13:46:21 2007
+From: admin at berlios.de (admin at berlios.de)
+Date: Thu, 22 Nov 2007 13:46:21 +0100 (CET)
+Subject: [X4juli-svn] [Bug #12526] PatternFormatter doesn't work with the
+	default LogManager
+Message-ID: <200711221246.lAMCkLOa001317@unicorn.berlios.de>
+
+Bug #12526, was updated on 2007-Nov-22 13:46
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: grnch
+Assigned to : none
+Summary: PatternFormatter doesn't work with the default LogManager
+
+Details: PatternFormatter is a very useful component, it's a shame it can't be used without letting x4juli completely take over the java.util.logging implementation. In some environments this is not possible because access to JVM startup parameters (to override java.util.logging.LogManager) is not allowed or atleast inconvenient.
+
+In the Patches section there is a simple patch that fixes this under the name "Decouple PatternFormatter from x4juli-specific LogManagers".
+
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=12526&group_id=5430
+
+
+From admin at berlios.de  Thu Nov 22 14:21:47 2007
+From: admin at berlios.de (admin at berlios.de)
+Date: Thu, 22 Nov 2007 14:21:47 +0100 (CET)
+Subject: [X4juli-svn] [Bug #12527] Doesn't work with Tomcat 6.x
+Message-ID: <200711221321.lAMDLlKC001821@unicorn.berlios.de>
+
+Bug #12527, was updated on 2007-Nov-22 14:21
+Here is a current snapshot of the bug.
+
+Project: x4juli
+Category: None
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: grnch
+Assigned to : none
+Summary: Doesn't work with Tomcat 6.x
+
+Details: In the x4juli FAQ there are instructions of configuring Tomcat to use x4juli, but they don't work anymore because the Bootstrap class in Tomcat 6.x references the org.apache.juli.logging.* directly, so overwriting tomcat-juli.jar causes Tomcat to crash on startup.
+
+One way to make it work under Tomcat 6 again is to apply the patch in bug #012526 and then add the x4juli classes to the tomcat-juli.jar, instead of replacing it completely. Then you can start using x4juli formatters and handlers directly in tomcat/conf/logging.properties without tweaking catalina.{bat,sh}.
+
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=12527&group_id=5430
+
+
